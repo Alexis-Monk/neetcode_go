@@ -2,22 +2,16 @@ package main
 
 import "fmt"
 
-func containsDuplicate(nums []int) bool {
-	// Create a map to simulate a set where we store unique numbers.
-	hashset := make(map[int]bool)
+func containsDuplicate(nums []int) bool { // se crea la función a la cual se le van a asignar un array de numeros enteros y regresará un bool
+	hashset := make(map[int]bool) // se va a crear un mapa la cual la clave será un int y valor bool
 
-	// Iterate over the slice of integers.
-	for _, n := range nums {
-		// Check if the number is already present in the set.
-		if hashset[n] {
-			// If a duplicate is found, return true.
-			return true
+	for _, n := range nums { // se hará el loop de la lista
+		if hashset[n] { // si le numero se encuentra en el mapa
+			return true // retorna true
 		}
-		// Add the number to the set.
-		hashset[n] = true
+		hashset[n] = true // si no está agrega el valor al hashset
 	}
-	// If the loop completes without finding duplicates, return false.
-	return false
+	return false // si acaba el loop y no encontró regresa false
 }
 
 // 1. Create a map to simulate a set where we store unique numbers.
