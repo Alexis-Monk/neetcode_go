@@ -26,6 +26,20 @@ func isAnagram(s1, t string) bool { // se crea la func que se le asignarán dos 
 	return true // sino regresa true
 }
 
+/*
+
+
+
+
+
+Espacio para no visualizar la función de arriba
+
+
+
+
+
+*/
+
 func isAnagram2(s, t string) bool {
 	if len(s) != len(t) {
 		return false

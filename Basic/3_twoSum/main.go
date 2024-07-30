@@ -15,6 +15,18 @@ func twoSum(nums []int, target int) []int { // se crea la func la cual se le van
 	return nil // sino regresa nil
 }
 
+/*
+
+
+
+
+Espacio para no visualizar la función de arriba
+
+
+
+
+*/
+
 func twoSum2(nums []int, target int) []int {
 	prevMap := make(map[int]int)
 
